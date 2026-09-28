@@ -219,7 +219,6 @@ int main(int argc, char *argv[]) {
 
         ssize_t read = getline(&line, &len, input_stream);
         
-        // Fim de arquivo (EOF)
         if (read == -1) {
             free(line);
             exit(0);
